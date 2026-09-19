@@ -4,6 +4,12 @@
 
 Mais de 4 anos de experiência construindo pipelines de dados ponta a ponta: captura automatizada (Selenium/Python), carga em SQL Server e dashboards em Power BI com DAX avançado.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Deogadox/Deogadox/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Deogadox/Deogadox/output/github-contribution-grid-snake.svg" />
+  <img alt="snake gif" src="https://raw.githubusercontent.com/Deogadox/Deogadox/output/github-contribution-grid-snake.svg" />
+</picture>
+
 ## 🔧 Stack principal
 
 <div>
