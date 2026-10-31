@@ -54,7 +54,7 @@ Pipeline ponta a ponta sobre dados reais de e-commerce: download automatizado co
 `Python` `SQL Server` `T-SQL` `Power BI` · Tech Challenge FIAP
 
 ### 🏭 STAR ERP — Sistema de gestão industrial *(repositório privado · projeto freelance)*
-ERP para uma fabricante de produtos de limpeza automotiva, cobrindo compras, produção, estoque e vendas. Modelo relacional em SQL Server (tabelas dimensão/fato, views e triggers), API em Node.js/Express e front-end em Next.js, com migração dos dados que antes viviam em planilhas.
+ERP para uma fabricante de produtos de limpeza automotiva, cobrindo compras, produção, estoque e vendas. Modelo relacional em SQL Server (convenção D_/F_, views de saldo de estoque calculadas dinamicamente e triggers), migração dos dados históricos que viviam em planilhas, relatório de custo × lucro por lote de produção, API em Node.js/Express e front-end em Next.js.
 `SQL Server` `Azure SQL` `Node.js` `Next.js` `Vercel`
 
 ### 🥩 [GestCarnes](https://carcaca-pricing.vercel.app) — Precificação para açougues
@@ -68,16 +68,28 @@ Site institucional para uma fisioterapeuta, desenvolvido em React/Next.js e hosp
 
 ## 💼 Experiência
 
-**Analista de MIS Sênior — NeoBpo** · *até set/2026*
-- Pipelines de captura automatizada com Python/Selenium (incluindo extração de painéis Qlik Cloud) e carga de planilhas do SharePoint em tabelas de staging no SQL Server
-- Stored procedures, views e medidas DAX para indicadores de atendimento, vendas e nível de serviço (real × projetado) de clientes como MAPFRE e Sem Parar
-- Monitoramento de jobs do SQL Server Agent e criação/ajuste de índices para resolver lentidão em consultas e views
-- Automação de rotinas de fechamento com exportação de relatórios e envio automático por e-mail
+### Analista de MIS Sênior — NeoBpo · *fev/2025 – set/2026*
+Ambiente multi-cliente (MAPFRE, Sem Parar, Marsh, Tech Force).
+- Pipelines de extração automatizada com **Python + Selenium** (Qlik Sense, Qlik Cloud, Evertrack), com sessões resilientes e anti-detecção via CDP — **eliminando de 1 a 3 horas de trabalho manual por dia**
+- Dashboard de performance operacional em **Power BI** (rankings dinâmicos por quartil, ocupação e tráfego em tempo real) usado por supervisores para acompanhar **50 a 150 operadores**
+- Debugging e otimização de **stored procedures e views** críticas em produção: violações de chave por gaps de vigência, gargalos em funções table-valued entre bancos e falhas de carga incremental
+- Pipeline **SharePoint → SQL Server** com staging e validação defensiva (`TRY_CONVERT`/`NULLIF`), e tratamento de arquivos **SFTP** com encoding e separador não padrão
+- ETL e medidas DAX de **real × forecast** para cliente de mobilidade/pedágio; automação do fechamento intraday de um cliente de seguros, com migração de alertas para **Power Automate**
+- Monitoramento de jobs do **SQL Server Agent** e criação/ajuste de índices para resolver lentidão
 
-**Analista de Dados — Grupo São Roque** · *ago/2024 – fev/2025*
-- Relatórios em Power BI para a operação de distribuição
+### Analista de Dados — Grupo São Roque · *ago/2024 – fev/2025*
+Suíte de relatórios gerenciais em **Power BI** (alimentada por SQL Server e rotinas Python) cobrindo toda a cadeia da distribuidora — recebimento, armazenagem, estoque, vendas, entregas e devoluções.
+- **Gestão de estoques:** mais de **5,9 mil SKUs** segmentados por curva A–D, com excesso, risco de ruptura, dias de estoque (DDE) e margem/giro por comprador e fornecedor — apoio direto às decisões de compra
+- **Avarias e vencimentos:** projeção de perda financeira por produto a vencer, com **mapa de calor sobre a planta do armazém** (rua, prédio, nível e apartamento) para localizar itens críticos
+- **Devoluções:** análise de **Pareto (80/20)** das causas, separando responsabilidade entre Logística e Comercial
+- **Entregas:** acompanhamento de mais de **16 mil entregas/mês** por rota, praça e carregamento, com sazonalidade diária e semanal
+- **Vendas e recebimento:** pedidos antes × depois das 12h para planejar separação e faturamento; KPIs de descarga e tempo de pátio por fornecedor
+- Queries SQL de extração e consolidação e tratamento automatizado em Python, reduzindo a preparação manual dos relatórios
 
-**Estagiário de Dados — Seguros Unimed** · *jun/2023 – jun/2024*
+### Estagiário de Dados — Seguros Unimed · *jun/2023 – jun/2024*
+- Apoio à equipe de dados na construção de relatórios analíticos e planilhas avançadas
+- Scripts em Python para automatizar tarefas repetitivas
+- Primeira experiência profissional com SQL e ferramentas de BI em ambiente corporativo
 
 ---
 
@@ -85,7 +97,10 @@ Site institucional para uma fisioterapeuta, desenvolvido em React/Next.js e hosp
 
 - **Pós-graduação em Data Analytics** — FIAP *(em andamento, previsão 2027)*
 - **Tecnólogo em Análise e Desenvolvimento de Sistemas** — FIAP *(2022–2024)*
-- **Databricks: Transformação de Dados com PySpark** — Alura *(2026)*
+- **Databricks: Transformação de Dados com PySpark** — Alura *(2026)* · Carreira Engenharia de Dados — Alura *(em andamento)*
+- Data Visualization (80h) e Big Data & Analytics (60h) — FIAP · Python do Básico ao Avançado (64h) — Udemy
+
+🌐 Português nativo · Inglês intermediário (leitura e escrita técnica)
 
 ---
 
